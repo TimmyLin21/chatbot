@@ -1,0 +1,29 @@
+.footer__copyright {
+  text-align: center;
+  background-color: var(--color-bgGray);
+  padding: 1rem 0;
+}
+
+.footer__text {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 18.3125rem;
+  h3 {
+    font-size: var(--fontSize-4);
+    line-height: var(--lineHeight-4);
+    margin-bottom: 3rem;
+  }
+  a {
+    margin-bottom: 3.75rem;
+    @include breakpoint(medium) {
+      margin-bottom: 6.25rem;
+    }
+  }
+  @include breakpoint(medium) {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    padding-top: 16.25rem;
+  }
+}

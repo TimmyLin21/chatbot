@@ -1,0 +1,86 @@
+.options__section {
+  text-align: center;
+  margin-bottom: 3.75rem;
+  h2 {
+    font-size: var(--fontSize-5);
+    line-height: var(--lineHeight-5);
+    margin-bottom: 1.5rem;
+  }
+  @include breakpoint(large) {
+    h2 {
+      margin-bottom: 3rem;
+    }
+    margin-bottom: 5.875rem;
+  }
+}
+
+.options__buttons {
+  margin-bottom: 2rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  button {
+    margin-right: .375rem;
+  }
+  @include breakpoint(large) {
+    margin-bottom: 3rem;
+  }
+}
+
+.options__plan {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  h3 {
+    font-size: var(--fontSize-4);
+    line-height: var(--lineHeight-4);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-carousel);
+    margin-bottom: 1.5rem;
+  }
+  p:nth-child(3) {
+    margin-bottom: 1.5rem;
+  }
+  @include breakpoint(medium) {
+
+  }
+}
+
+.options__block {
+  padding: 1rem 1.5rem;
+  background-color: var(--color-bgGray);
+  border-radius: 12px;
+  p:first-child {
+    font-size: var(--fontSize-1);
+    line-height: var(--lineHeight-1);
+    margin-bottom: .5rem;
+  }
+  p:last-child {
+    font-size: var(--fontSize-5);
+    line-height: var(--lineHeight-5);
+  }
+}
+
+.options__feature {
+  text-align: left;
+  list-style-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg');
+  list-style-position: outside;
+  padding-left: 3rem;
+  margin-top: 1.6875rem;
+  margin-bottom: 3rem;
+  li:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  li span {
+    padding-left: 1rem;
+  }
+}
+
+.options__cards {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  row-gap: 1.5rem;
+  @include breakpoint(large) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.3125rem;
+  }
+}

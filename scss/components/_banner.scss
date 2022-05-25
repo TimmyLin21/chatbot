@@ -1,0 +1,68 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 6.15625rem;
+  img {
+    margin: 0 auto;
+    max-width: 304.32px;
+  }
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13.5625rem;
+    img {
+      max-width: 532px;
+      width: 50%;
+    }
+  }
+}
+
+.banner__text {
+  margin-bottom: 2rem;
+  h1 {
+    color: var(--color-primary);
+  }
+  @include breakpoint(medium) {
+    h1 {
+      font-size: var(--fontSize-3);
+      line-height: var(--lineHeight-3);
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8125rem;
+    }
+  }
+}
+
+.planBanner {
+  padding-top: 3rem;
+  padding-bottom: 22.5rem;
+  background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg');
+  border-radius: 0 0 0 150px;
+  background-color: var(--color-banner);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  margin-bottom: 3.75rem;
+  h1 {
+    font-size: var(--fontSize-6);
+    line-height: var(--lineHeight-6);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  @include breakpoint(medium) {
+    background-image: none;
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+  @include breakpoint(large) {
+    padding-top: 5.75rem;
+    padding-bottom: 17.5rem;
+    h1 {
+      font-size: var(--fontSize-7);
+      line-height: var(--lineHeight-7);
+    }
+  }
+}

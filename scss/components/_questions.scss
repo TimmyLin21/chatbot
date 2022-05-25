@@ -1,0 +1,44 @@
+.questions__section {
+  text-align: center;
+  margin-bottom: 3.75rem;
+  h2 {
+    font-size: var(--fontSize-5);
+    line-height: var(--lineHeight-5);
+    margin-bottom: 2rem;
+  }
+  @include breakpoint(large) {
+    margin-bottom: 6.25rem;
+    h2 {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.question {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .open {
+    content: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_plus.svg');
+  }
+  .close {
+    content: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_minus.svg');
+  }
+  &.active {
+    p:first-child {
+      color: var(--color-primary);
+    }
+    .question__description {
+      display: block;
+    }
+  }
+}
+
+.question__description {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: left;
+  margin-bottom: .5rem;
+  display: none;
+}

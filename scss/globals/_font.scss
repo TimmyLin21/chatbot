@@ -1,0 +1,64 @@
+// font size: 12, 16, 18, 24, 28, 32, 48px
+// line height: 17, 24, 26, 35, 40, 46, 70px
+:root {
+  --font-NotoSans: 'Noto Sans TC', sans-serif;
+  --fontSize-1: .75rem;
+  --fontSize-2: 1rem;
+  --fontSize-3: 1.125rem;
+  --fontSize-4: 1.5rem;
+  --fontSize-5: 1.75rem;
+  --fontSize-6: 2rem;
+  --fontSize-7: 3rem;
+  --lineHeight-1: 1.0625rem;
+  --lineHeight-2: 1.5rem;
+  --lineHeight-3: 1.625rem;
+  --lineHeight-4: 2.1875rem;
+  --lineHeight-5: 2.5rem;
+  --lineHeight-6: 2.875rem;
+  --lineHeight-7: 4.375rem;
+}
+
+body {
+  font-family: var(--font-NotoSans);
+  color: var(--color-text);
+  line-height: var(--lineHeight-2);
+}
+
+h2 {
+  font-size: var(--fontSize-6);
+  line-height: var(--lineHeight-6);
+  font-weight: bold;
+  @include breakpoint(large) {
+    font-size: var(--fontSize-7);
+    line-height: var(--lineHeight-7);
+  }
+}
+
+h3 {
+  font-size: var(--fontSize-5);
+  line-height: var(--lineHeight-5);
+  font-weight: bold;
+  @include breakpoint(large) {
+    font-size: var(--fontSize-6);
+    line-height: var(--lineHeight-6);
+  }
+}
+
+h4 {
+  font-size: var(--fontSize-3);
+  line-height: var(--lineHeight-3);
+  font-weight: bold;
+  @include breakpoint(large) {
+    font-size: var(--fontSize-4);
+    line-height: var(--lineHeight-4);
+  }
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.fs-1 {
+  font-size: var(--fontSize-1);
+  line-height: var(--lineHeight-1);
+}

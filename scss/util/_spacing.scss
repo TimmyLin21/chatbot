@@ -1,0 +1,33 @@
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 3,
+);
+
+@each $space, $value in $spacers {
+  .mt-#{$space} {
+    margin-bottom: $value;
+  }
+  .mb-#{$space} {
+    margin-bottom: $value;
+  }
+  .mr-#{$space} {
+    margin-right: $value;
+  }
+  .ml-#{$space} {
+    margin-left: $value;
+  }
+}
+
+.mx-6px {
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+.mb-0 {
+  margin-bottom: 0!important;
+}

@@ -1,0 +1,16 @@
+.backToTop {
+  text-decoration: none;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 57px;
+  padding: 1.625rem 17px;
+  font-size: 1.125rem;
+  line-height: 19px;
+  border-radius: 50%;
+  color: white;
+  background-color: var(--color-primary);
+  transition: all .7s;
+  &:hover {
+    background-color: #B8E6E7;
+  }
+}

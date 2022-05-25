@@ -1,0 +1,42 @@
+.btn {
+  padding: .5rem 2rem;
+  border-radius: 1.375rem;
+  line-height: 1.5rem;
+  border: none;
+  transition: background-color .7s;
+}
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn--red {
+  background-color: var(--color-red);
+  color: white;
+  &:hover {
+    background-color: salmon;
+  }
+}
+
+.btn--primary {
+  background-color: var(--color-primary);
+  color: white;
+  &:hover {
+    background-color: #B8E6E7;
+  }
+}
+
+.btn--outline--primary {
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  &:hover {
+    background-color: var(--color-primary);
+    color: white;
+  }
+}
+
+.btn--sm {
+  padding: .5rem 1rem;
+  border-radius: 27px;
+}
